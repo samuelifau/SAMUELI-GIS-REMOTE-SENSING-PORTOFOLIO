@@ -1,26 +1,35 @@
-🌿 VegetationMapping — NDVI Calculation Project
-GIS & Remote Sensing Mini Project — Python (Rasterio, NumPy, Matplotlib)
+<p align="center">
+  <img src="https://img.shields.io/badge/Remote%20Sensing-NDVI-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Rasterio-GeoTIFF-orange?style=for-the-badge">
+</p>
 
-📌 Ringkasan Proyek
+# 🌿 **VegetationMapping — NDVI Calculation Project** 🌿
+### *GIS & Remote Sensing Mini Project using Python (Rasterio, NumPy, Matplotlib)*
 
-Proyek ini merupakan demo sederhana untuk menghitung NDVI (Normalized Difference Vegetation Index) menggunakan citra satelit EuroSAT/Sentinel-2.
-Output berupa GeoTIFF NDVI dan visualisasi peta NDVI dengan colormap.
+---
 
-Tujuan utama proyek ini:
 
-Mempelajari workflow raster processing di Remote Sensing
+📌 Project Summary
 
-Menghasilkan peta NDVI dari band Red (B04) dan NIR (B08)
+This project is a simple demonstration of calculating NDVI (Normalized Difference Vegetation Index) using a small EuroSAT/Sentinel-2 sample image.
+The output includes an NDVI GeoTIFF raster and a colorized NDVI map.
 
-Membangun portofolio GIS/Remote Sensing yang mudah dipahami perekrut
+The main goals of this project:
 
-Proyek ini sengaja dibuat ringan, sehingga aman untuk upload GitHub (tidak ada data besar).
+Learn basic raster processing in Remote Sensing
 
-🚀 Fitur Utama
+Generate NDVI from Red (B04) and NIR (B08) bands
 
-Membaca citra satelit format TIFF
+Build a clean GIS/Remote Sensing portfolio project for recruiters
 
-Menghitung NDVI dengan rumus:
+The repository uses lightweight sample data, making it safe for GitHub uploads.
+
+🚀 Key Features
+
+Read satellite raster data (TIFF)
+
+NDVI computation using:
 
 𝑁
 𝐷
@@ -47,135 +56,133 @@ NIR−RED
 	​
 
 
-Menyimpan hasil NDVI sebagai GeoTIFF
+Save NDVI result as GeoTIFF
 
-Menampilkan visualisasi NDVI
+Generate NDVI visualization with Matplotlib
 
-Struktur repo rapi, modular, dan siap dikembangkan ke project lain
+Modular, clean, and extendable project structure
 
-📁 Struktur Folder
+📁 Folder Structure
 VegetationMapping/
 │
 ├── data/
-│   └── sample_eurosat.tif        # Sample TIFF kecil untuk NDVI
+│   └── sample_eurosat.tif        # Sample TIFF for NDVI
 │
 ├── scripts/
-│   └── ndvi_calculation.py       # Script utama NDVI
+│   └── ndvi_calculation.py       # Main NDVI script
 │
 ├── output/
-│   ├── ndvi_result.tif           # Hasil NDVI dalam format GeoTIFF
-│   └── ndvi_map.png              # Visual NDVI (PNG)
+│   ├── ndvi_result.tif           # NDVI raster output
+│   └── ndvi_map.png              # NDVI visualization
 │
 ├── docs/
 │   └── images/
-│       └── ndvi_preview.png      # Contoh output NDVI
+│       └── ndvi_preview.png      # NDVI preview image
 │
-├── requirements.txt              # Dependencies
-├── .gitignore                    # File yang dikecualikan Git
+├── requirements.txt              # Python dependencies
+├── .gitignore                    # Git ignore rules
 ├── LICENSE                       # MIT License
-└── README.md                     # Dokumentasi proyek
+└── README.md                     # Documentation
 
-🧪 Contoh Output
-📍 Peta NDVI
+🧪 NDVI Example Output
+File	Description
+output/ndvi_result.tif	NDVI GeoTIFF raster
+output/ndvi_map.png	Colorized NDVI visualization
+🛠 Technologies Used
+Library	Purpose
+Rasterio	Read/write raster data
+NumPy	NDVI computation
+Matplotlib	Visualization
+Python 3.x	Main language
+📥 Dataset Sources
 
-Format output:
-
-File	Deskripsi
-output/ndvi_result.tif	NDVI raster GeoTIFF
-output/ndvi_map.png	Visualisasi NDVI (colorized)
-🛠 Teknologi yang Digunakan
-Library	Fungsi
-Rasterio	Baca & tulis data raster
-NumPy	Perhitungan NDVI
-Matplotlib	Visualisasi NDVI
-Python 3.x	Bahasa pemrograman utama
-📥 Dataset
-
-Dataset asli EuroSAT tersedia di:
+EuroSAT Dataset
 🔗 https://github.com/phelber/eurosat
 
-Dataset Sentinel-2 asli tersedia di:
+Sentinel-2 Data (ESA)
 🔗 https://earth.esa.int/eogateway/missions/sentinel-2
 
-Repository ini hanya memakai sample TIFF kecil agar repository tetap ringan dan bisa di-push ke GitHub.
+Only a small sample TIFF is included to keep the repo lightweight.
 
-🧩 Cara Instalasi & Menjalankan
-1️⃣ Clone Repository
+🧩 Installation & Usage
+1️⃣ Clone This Repository
 git clone https://github.com/samuelifau/SAMUELI-GIS-REMOTE-SENSING-PORTOFOLIO.git
 cd VegetationMapping
 
-2️⃣ Buat Virtual Environment
+2️⃣ Create a Virtual Environment
 python -m venv venv
 
-3️⃣ Aktifkan Environment
-
-Windows:
-
+3️⃣ Activate Virtual Environment (Windows)
 .\venv\Scripts\activate
 
 4️⃣ Install Dependencies
 pip install -r requirements.txt
 
-5️⃣ Jalankan NDVI Script
+5️⃣ Run NDVI Script
 python scripts/ndvi_calculation.py
 
 
-Output akan muncul pada folder:
+Generated outputs:
 
 output/ndvi_result.tif
 output/ndvi_map.png
 
-🧾 Penjelasan Skrip Utama
+🧾 How the Script Works
 with rasterio.open(DATA_FP) as src:
     img = src.read()
     red = img[2].astype(float)
     nir = img[3].astype(float)
+
     ndvi = (nir - red) / (nir + red + 1e-10)
 
 
-Script melakukan:
+The script:
 
-Membaca TIFF input
+Reads the TIFF
 
-Mengambil band ke-3 (Red) dan band ke-4 (NIR)
+Extracts Red & NIR bands
 
-Menghitung NDVI
+Computes NDVI
 
-Menyimpan GeoTIFF + PNG
+Saves GeoTIFF & image visualization
 
-🎯 Tujuan Project
+🎯 Project Purpose
 
-Project ini merupakan bagian dari GIS & Remote Sensing Portfolio Series untuk menunjukkan:
+This project is part of the GIS & Remote Sensing Portfolio Series, demonstrating:
 
-Kemampuan memahami data raster
+Raster data understanding
 
-Pemrosesan citra satelit (Sentinel-2/EuroSAT)
+Satellite image processing (Sentinel-2 / EuroSAT)
 
-Pengelolaan environment Python
+Python environment management
 
-Pembuatan peta NDVI
+NDVI map generation
 
-Struktur repository profesional
+Professional repository structure
 
-Cocok untuk:
+Suitable for:
 
-✔ Mahasiswa GIS
-✔ Pelamar pekerjaan Remote Sensing
-✔ Data Scientist Geospasial
+✔ GIS students
+✔ Remote Sensing job applicants
+✔ Geospatial data analysts
 
 📜 License
 
-Proyek ini menggunakan MIT License.
-Dapat digunakan bebas untuk belajar atau riset.
+This project is licensed under the MIT License.
+Free to use for learning and research.
 
-🙋 Tentang Saya
+🙋 About Me
 
 Samueli Fau
 GIS & Remote Sensing Enthusiast
+
 📧 Email: samuelifau@student.untan.ac.id
 
 🌐 GitHub: https://github.com/samuelifau
 
-Jika project ini bermanfaat, jangan lupa beri ⭐ di GitHub!
+If you find this project useful, please ⭐ the repository!
+
+⭐ Thank You for Visiting This Project!
 
 ⭐ Terima kasih sudah melihat project ini!
+
