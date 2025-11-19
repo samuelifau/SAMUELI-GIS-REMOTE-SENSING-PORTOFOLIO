@@ -1,8 +1,4 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/samuelifau/SAMUELI-GIS-REMOTE-SENSING-PORTOFOLIO/main/banner.png" alt="Banner Portfolio" width="100%" />
-</div>
-
-<div align="center">
 
 # 🌿 **VegetationMapping — NDVI Calculation Project** 🌿
 ### *GIS & Remote Sensing Mini Project using Python (Rasterio, NumPy, Matplotlib)*
@@ -196,6 +192,7 @@ If you find this project useful, please ⭐ the repository!
 ⭐ Thank You for Visiting This Project!
 
 ⭐ Terima kasih sudah melihat project ini!
+
 
 
 
