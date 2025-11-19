@@ -2,16 +2,21 @@
   <img src="https://raw.githubusercontent.com/samuelifau/SAMUELI-GIS-REMOTE-SENSING-PORTOFOLIO/main/banner.png" alt="Banner Portfolio" width="100%" />
 </div>
 
+<div align="center">
+
+# 🌿 **VegetationMapping — NDVI Calculation Project** 🌿
+### *GIS & Remote Sensing Mini Project using Python (Rasterio, NumPy, Matplotlib)*
+
+</div>
+
 <p align="center">
   <img src="https://img.shields.io/badge/Remote%20Sensing-NDVI-green?style=for-the-badge">
   <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Rasterio-GeoTIFF-orange?style=for-the-badge">
 </p>
 
-# 🌿 **VegetationMapping — NDVI Calculation Project** 🌿
-### *GIS & Remote Sensing Mini Project using Python (Rasterio, NumPy, Matplotlib)*
-
 ---
+
 <p align="center">
 <img width="1052" height="770" alt="image" src="https://github.com/user-attachments/assets/67ffc002-7791-486f-b70c-c4203b5e6e0f" />
 </p>
@@ -191,6 +196,7 @@ If you find this project useful, please ⭐ the repository!
 ⭐ Thank You for Visiting This Project!
 
 ⭐ Terima kasih sudah melihat project ini!
+
 
 
 
