@@ -1,8 +1,4 @@
-<p align="center">
-<img width="1052" height="770" alt="image" src="https://github.com/user-attachments/assets/67ffc002-7791-486f-b70c-c4203b5e6e0f" />
-</p>
 
----
 <p align="center">
   <img src="https://img.shields.io/badge/Remote%20Sensing-NDVI-green?style=for-the-badge">
   <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge">
@@ -13,6 +9,9 @@
 ### *GIS & Remote Sensing Mini Project using Python (Rasterio, NumPy, Matplotlib)*
 
 ---
+<p align="center">
+<img width="1052" height="770" alt="image" src="https://github.com/user-attachments/assets/67ffc002-7791-486f-b70c-c4203b5e6e0f" />
+</p>
 
 📌 Project Summary
 
@@ -189,6 +188,7 @@ If you find this project useful, please ⭐ the repository!
 ⭐ Thank You for Visiting This Project!
 
 ⭐ Terima kasih sudah melihat project ini!
+
 
 
 
